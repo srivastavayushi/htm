@@ -1,4 +1,4 @@
-# COVID Bed Tracker
+# CodeRed
 
 ## About
 
