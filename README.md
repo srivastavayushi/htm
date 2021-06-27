@@ -4,6 +4,9 @@
 
 The lack of awareness and a viable solution for period emergencies is extremely urgent. This is where CodeRED comes to the rescue. 
 
+## Presentation
+[https://slides.com/d/ApIaE64/live]https://slides.com/d/ApIaE64/live
+
 
 ## Technology Stack
 
