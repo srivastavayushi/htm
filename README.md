@@ -27,7 +27,7 @@ Link to the presentation : https://slides.com/d/ApIaE64/live
 - One-on-one video call sessions with counsellors are also available for a more personalized experience.
 - Users can rate the hygiene of washrooms, add new washrooms, rate the service of stores and add new stores through the portal.
 - Having data on washrooms and stores across nations, CodeRED caters to a global audience.
-<hr/>
+
 ## Routes
 - /profile : profile of the user
 - /stores : get nearest stores 
@@ -37,7 +37,7 @@ Link to the presentation : https://slides.com/d/ApIaE64/live
 - /storeprofile : profile of the store
 - /addorg : add organisation
 - /issues : fetch & add issue (user)
-<hr/>
+
 ## Screenshots
 
 ### Overview
