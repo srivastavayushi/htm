@@ -15,7 +15,7 @@ export default function Main() {
         <div class="flex max-w-6xl mx-auto">
           <div class="container relative flex flex-col w-1/2 px-10 pb-1 pr-12 text-2xl font-hairline text-white">
             <h2 class="relative z-20 text-5xl font-extrabold leading-tight text-white">
-              Build a culture
+              CodeRED
               <br /> that excels
             </h2>
             <p class="relative z-20 block mt-4 text-xl">

@@ -18,14 +18,12 @@ export default function Home() {
 
         <div class="flex max-w-6xl mx-auto">
           <div class="container relative flex flex-col w-1/2 px-10 pb-1 pr-12 text-2xl font-hairline text-white">
-            <h2 class="relative z-20 text-5xl font-extrabold leading-tight text-pink">
-              Build a culture
-              <br /> that excels
+            <h2 class="relative z-20 text-5xl font-extrabold leading-tight text-red">
+              CodeRED
+              <br /> The All-in-One app for all your needs
             </h2>
             <p class="relative z-20 block mt-4 text-xl text-pink-light">
-              We've created the ultimate resource for turning your culture into
-              a super-powered productivity machine by encouraging collaboration
-              growth, and incentives!
+              At CodeRED we understand the need for hygienic washrooms, and value of supplies during periods along with the need to make people aware of the needs of a menstruating person.
             </p>
             <div class="flex mt-4">
               <NavLink to="/stores" className="flex items-center self-start justify-center px-5 py-3 mt-5 text-base font-medium leading-tight text-white transition duration-150 ease-in-out bg-indigo-600 border border-pink-dark rounded-lg shadow hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo md:py-4 md:text-lg md:px-8">
