@@ -1,13 +1,13 @@
-import React,{useState,useEffect} from 'react';
+import React,{useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import * as GrIcons from "react-icons/gr";
 import * as MdIcons from "react-icons/md";
 import * as BiIcons from "react-icons/bi";
 import axios from "axios";
-import { useAuth0 } from "@auth0/auth0-react";
+// import { useAuth0 } from "@auth0/auth0-react";
 
 export default function Issues() {
-  const { user } = useAuth0();
+  // const { user } = useAuth0();
   // FETCH ISSUES
   const [issues, setIssues] = React.useState([]);
 

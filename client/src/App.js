@@ -1,6 +1,6 @@
 import React from "react";
-import Appointments from "./pages/appointments";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+// import Appointments from "./pages/appointments";
+import { BrowserRouter as Router, Route, useHistory } from "react-router-dom";
 import 'bulma/css/bulma.css'
 import './pages/App.css'
 import Profile from "./components/Profile";
@@ -24,7 +24,7 @@ import AddWashroom from "./components/newpages/AddWashroom";
 import StoreProfile from "./components/newpages/StoreProfile";
 import Organisation from "./components/newpages/organisations/index";
 import AddOrganisation from "./components/newpages/organisations/AddOrg";
-import Video from './pages/App'
+// import Video from './pages/App'
 import Index from './pages/index/index'
 import Meeting from './pages/meeting/index'
 

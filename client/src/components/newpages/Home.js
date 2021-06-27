@@ -52,7 +52,7 @@ export default function Home() {
                 </svg>
               </span>
             </div>
-            <img src={image} class="object-cover w-full h-full" />
+            <img src={image} class="object-cover w-full h-full" alt="something"/>
           </div>
         </div>
       </div>

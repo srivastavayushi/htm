@@ -69,6 +69,9 @@ class AgoraCanvas extends React.Component {
       this.subscribeStreamEvents();
       this.client.join($.appId, $.channel, $.uid, (uid) => {
         this.state.uid = uid;
+        this.setState((state) => {
+          return {uid : uid}
+        });
         console.log("User " + uid + " join channel successfully");
         console.log("At " + new Date().toLocaleTimeString());
         // create local stream

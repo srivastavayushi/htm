@@ -1,6 +1,6 @@
 import React from "react";
 
-import AddIssue from "./AddIssues";
+// import AddIssue from "./AddIssues";
 import AllIssues from "./AllIssues";
 
 export default function Issues() {

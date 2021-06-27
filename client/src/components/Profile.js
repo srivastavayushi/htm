@@ -1,44 +1,44 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
-import JSONPretty from "react-json-pretty";
+// import JSONPretty from "react-json-pretty";
 
 // Importing Content
 import { ProfileData } from "./content/Profile";
 
 const Profile = () => {
-  const { user, isAuthenticated, getAccessTokenSilently } = useAuth0();
-  const [userMetadata, setUserMetadata] = useState(null);
-  useEffect(() => {
-    const getUserMetadata = async () => {
-      const domain = "dev-3wsto-4w.us.auth0.com";
+  const { user, isAuthenticated} = useAuth0();
+  // const [userMetadata, setUserMetadata] = useState(null);
+  // useEffect(() => {
+  //   const getUserMetadata = async () => {
+  //     const domain = "dev-3wsto-4w.us.auth0.com";
 
-      try {
-        const accessToken = await getAccessTokenSilently({
-          audience: `https://${domain}/api/v2/`,
-          scope: "read:current_user",
-        });
+  //     try {
+  //       const accessToken = await getAccessTokenSilently({
+  //         audience: `https://${domain}/api/v2/`,
+  //         scope: "read:current_user",
+  //       });
 
-        const userDetailsByIdUrl = `https://${domain}/api/v2/users/${user.sub}`;
+  //       const userDetailsByIdUrl = `https://${domain}/api/v2/users/${user.sub}`;
 
-        const metadataResponse = await fetch(userDetailsByIdUrl, {
-          headers: {
-            Authorization: `Bearer ${accessToken}`,
-          },
-        });
+  //       const metadataResponse = await fetch(userDetailsByIdUrl, {
+  //         headers: {
+  //           Authorization: `Bearer ${accessToken}`,
+  //         },
+  //       });
 
-        const { user_metadata } = await metadataResponse.json();
+  //       const { user_metadata } = await metadataResponse.json();
 
-        setUserMetadata(user_metadata);
+  //       setUserMetadata(user_metadata);
 
-        console.log(accessToken);
-      } catch (e) {
-        console.log(e.message);
-      }
-    };
+  //       console.log(accessToken);
+  //     } catch (e) {
+  //       console.log(e.message);
+  //     }
+  //   };
 
-    getUserMetadata();
-  }, []);
+  //   getUserMetadata();
+  // }, []);
   return (
     isAuthenticated && (
       <div>

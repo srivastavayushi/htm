@@ -281,7 +281,7 @@ class BaseOptions extends React.Component {
       <div className={this.state.active ? 'dropdown is-active' : 'dropdown'}>
         <div className="dropdown-trigger"
           onClick={() => this.setState({ 'active': !this.state.active })}>
-          <a id="baseMode" className="ag-rounded button" aria-haspopup="true" aria-controls="baseModeOptions">
+          <a href="/#" id="baseMode" className="ag-rounded button" aria-haspopup="true" aria-controls="baseModeOptions">
             <span id="baseOptionLabel">{this.state.message}</span>
             <span className="icon is-small">
               <i className="ag-icon ag-icon-arrow-down" aria-hidden="true"></i>
@@ -324,7 +324,7 @@ class AdvancedOptions extends React.Component {
       <div className={this.state.active ? 'dropdown is-active' : 'dropdown'}>
         <div className="dropdown-trigger"
           onClick={() => this.setState({ 'active': !this.state.active })}>
-          <a id="advancedProfile" className="ag-rounded button" aria-haspopup="true" aria-controls="advancedOptions">
+          <a href="/#" id="advancedProfile" className="ag-rounded button" aria-haspopup="true" aria-controls="advancedOptions">
             <span>Advanced</span>
           </a>
         </div>
