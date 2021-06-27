@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React,{useState,useEffect} from 'react';
+import {Link} from 'react-router-dom';
 import * as GrIcons from "react-icons/gr";
 import * as MdIcons from "react-icons/md";
 import * as BiIcons from "react-icons/bi";
@@ -77,15 +78,16 @@ export default function Issues() {
                     Location of Issue
                   </p>
                 </div>
-                <div class="flex flex-row space-x-2 items-center justify-left">
-                  <span class="mt-4 mb-2 text-xl font-semibold tracking-widest text-black uppercase lg:mt-0 title-font">
-                    {" "}
-                    <MdIcons.MdDateRange />
-                  </span>
-                  <p class="text-base leading-relaxed text-blueGray-500">
-                    {" "}
-                    Date of Issue
-                  </p>
+                <Link to="/video" class="flex flex-row space-x-2 items-center justify-left border"><span class="mt-4 mb-2 text-xl font-semibold tracking-widest text-black uppercase lg:mt-0 title-font"> <MdIcons.MdDateRange /></span>
+                  <p class="text-base leading-relaxed text-blueGray-500"> {((issue.isAccepted)?"Accepted":"Pending") }</p>
+                </Link>{
+                  issue.isCounsellorRequired === true &&
+                  <div class="flex flex-row space-x-2 text-white mt-3 items-center"><button class="flex flex-row bg-pink-dark rounded-full p-1.5"><span class="mt-4 mb-2 text-xl font-semibold tracking-widest uppercase lg:mt-0 title-font"> <BiIcons.BiSupport/></span>
+                  <p class="text-base leading-relaxed "> Counsellor Needed</p></button>
+                  <button class="flex flex-row bg-pink-dark rounded-full p-1.5">
+                  <p class="text-base leading-relaxed "> Schedule Meeting </p></button>
+                </div> 
+                }
                 </div>
                 <button class="flex flex-row space-x-2 items-center justify-left border">
                   <span class="mt-4 mb-2 text-xl font-semibold tracking-widest text-black uppercase lg:mt-0 title-font">
@@ -122,7 +124,6 @@ export default function Issues() {
                 )}
               </div>
             </div>
-          </div>
         ))}
       </div>
     </div>
