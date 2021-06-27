@@ -1,13 +1,8 @@
 import React from "react";
 import Appointments from "./pages/appointments";
-<<<<<<< HEAD
-import { BrowserRouter as Router, Switch, Route, useHistory } from "react-router-dom";
-
-=======
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import 'bulma/css/bulma.css'
 import './pages/App.css'
->>>>>>> 60bcfe29adaa2256f6c2bc528580c25e2950ec9f
 import Profile from "./components/Profile";
 import { useAuth0 } from "@auth0/auth0-react";
 // import LoginButton from './components/Login/LoginButton';
