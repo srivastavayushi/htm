@@ -27,16 +27,15 @@ export default function Issues() {
 
   function setTrigger(e) {
     console.log(e._id);
-    const id = e._id;
-
+    // const id = e._id;
     try{
       const config = {
         headers: {
           "Content-Type" : "application/json",
         }
       };
-      const body = JSON.stringify()
-      const res = await axios.post("http://localhost:4000/api/query/",body,config);
+      const body = {id:e._id}
+      const res = axios.post("http://localhost:4000/api/query/acceptQuery",body,config);
       console.log(res.data);
     } catch(err){
       console.error(err.response.data);

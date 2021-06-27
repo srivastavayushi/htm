@@ -54,14 +54,17 @@ const querySchema = new mongoose.Schema({
       },
       ownerEmail: {
         type: String,
-    
       },
       orgEmail:{
         type:String,
       },
     isAccepted:{
         type: Boolean,
-        default: true
+        default: false
+    },
+    meetingId:{
+      type:String,
+      default:""
     },
     createdAt: {
         type: Date,

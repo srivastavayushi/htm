@@ -48,14 +48,15 @@ router.get("/allQueries", async (req, res) => {
     }
 });
     
-module.exports = router;
 
 router.post("/acceptQuery", async (req,res) => {
   try{
-    const queryArray = await Query.findById(req._id)
+    Query.update({_id:ObjectId(req.id)}, {$set: {"isAccepted":"true","isCounsellorRequired":"true"}})
   } catch(err){
     console.error(err);
   }
-
+  
 });
 
+
+module.exports = router;
