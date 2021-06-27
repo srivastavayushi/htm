@@ -50,3 +50,12 @@ router.get("/allQueries", async (req, res) => {
     
 module.exports = router;
 
+router.post("/acceptQuery", async (req,res) => {
+  try{
+    const queryArray = await Query.findById(req._id)
+  } catch(err){
+    console.error(err);
+  }
+
+});
+

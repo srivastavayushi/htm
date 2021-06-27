@@ -15,6 +15,9 @@ const pointSchema = new mongoose.Schema({
   
 
 const querySchema = new mongoose.Schema({
+    id:{
+      type: ObjectId,
+    },
     //latitude and longitude
     lat:{
         type: Number,

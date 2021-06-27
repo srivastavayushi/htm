@@ -1,6 +1,6 @@
 import React from "react";
 import Appointments from "./pages/appointments";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, useHistory } from "react-router-dom";
 
 import Profile from "./components/Profile";
 import { useAuth0 } from "@auth0/auth0-react";
@@ -26,9 +26,10 @@ import AddOrganisation from "./components/newpages/organisations/AddOrg"
 
 export default function App() {
   const { isLoading } = useAuth0();
+  const history = useHistory();
   if (isLoading) return <div>Loading</div>;
   return (
-    <Router>
+    <Router history={history}>
       {/* <Sidebar /> */}
       {/* <FetchMarkers /> */}
       {/* <Home /> */}
